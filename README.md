@@ -1,9 +1,15 @@
 # Image Modification
 
-This project takes an image and applies modifications to it. Modifications can be filters, rotating, scaling etc... This project was made during my first year of university.
+Pure Python functions to edit PPM images, with no external library: color inversion, grayscale, bars over the image, overlay with a transparent color key, scaling, mosaic and rotation. Each function comes with its tests.
 
-# How to use it
+## Usage
 
-Just run the file `filters.py`. Explore this file to find which functions you can call on your image.
+```bash
+python filters.py
+```
 
-A puppy image is given as example, but you can use any image. When you call a function on your image, the new image will be saved in the src repository.
+`main()` reads `puppy.ppm`, applies every filter and writes the results next to it (`puppy_gray.ppm`, `puppy_mosaic.ppm`, and so on). Any PPM image works in place of the example.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
